@@ -26,3 +26,6 @@ fruit_ranks <- data.frame(fruits, rank)
 
 head(fruit_ranks)
 
+# Display an ordered vesion of first rows of the data frame
+
+head(fruit_ranks[order(fruit_ranks$rank, decreasing = FALSE), ])
