@@ -12,3 +12,7 @@ str(people)
 
 glimpse(people)
 
+# Modify the data frame
+
+mutate(people, age_in_20 = age + 20)
+
