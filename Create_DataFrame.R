@@ -22,3 +22,7 @@ fruits <- c("mango","guineo","manzana","sandia","durazno")
 rank <- c(1L, 4L, 3L, 2L, 5L)
 fruit_ranks <- data.frame(fruits, rank)
 
+# Display first rows of the data frame
+
+head(fruit_ranks)
+
