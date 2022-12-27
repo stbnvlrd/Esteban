@@ -16,3 +16,9 @@ glimpse(people)
 
 mutate(people, age_in_20 = age + 20)
 
+# Create another data frame
+
+fruits <- c("mango","guineo","manzana","sandia","durazno")
+rank <- c(1L, 4L, 3L, 2L, 5L)
+fruit_ranks <- data.frame(fruits, rank)
+
