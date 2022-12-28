@@ -9,3 +9,6 @@ employee <- data.frame(id, name, job_title)
 
 name_separated <- separate(employee, name, into = c('first_name','last_name'), sep=' ')
 
+########## Join column ########## 
+
+unite(name_separated,'name',first_name,last_name,sep=' ')
