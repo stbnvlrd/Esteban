@@ -19,3 +19,9 @@ penguins %>%
 rename_with(penguins, toupper)
 rename_with(penguins, tolower)
 
+# Make the column names are unique and consistent
+
+clean_names(penguins)
+
+############ Order By ############ 
+
