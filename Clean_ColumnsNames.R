@@ -25,3 +25,9 @@ clean_names(penguins)
 
 ############ Order By ############ 
 
+# Order table by bill_length_mm
+
+penguins %>% arrange(bill_length_mm)  # Ascending
+
+penguins %>% arrange(-bill_length_mm)  # Descending
+
