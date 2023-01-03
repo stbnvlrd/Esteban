@@ -31,3 +31,13 @@ penguins %>% arrange(bill_length_mm)  # Ascending
 
 penguins %>% arrange(-bill_length_mm)  # Descending
 
+############ Group By ############ 
+
+# Group by islands and calculate de mean of the bill length
+
+penguins %>% group_by(species) %>% drop_na() %>% summarise(mean_bill_length_mm = mean(body_mass_g))
+
+# Group by islands and calculate de max of the bill length
+
+penguins %>% group_by(species) %>% drop_na() %>% summarise(max_flipper_length_mm = max(flipper_length_mm))
+
