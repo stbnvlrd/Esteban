@@ -12,3 +12,8 @@ colnames(hotel_bookings)
 install.packages('ggplot2')
 library(ggplot2)
 
+##########
+
+ggplot(data = hotel_bookings) +
+  geom_point(mapping = aes(x = lead_time, y = children))
+
